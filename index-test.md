@@ -2,6 +2,7 @@
 layout: default
 title: Markdown kitchen sink
 nav_order: 99
+nav-menu: true
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
