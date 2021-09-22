@@ -1,0 +1,30 @@
+# site settings
+title: Bot Jekyll Theme
+subtitle: Kite9 Ltd
+email: rob@kite9.com
+description: For various Symphony Websites
+baseurl: "/" # the subpath of your site, e.g. /blog
+include: ['_pages']
+url: https://robmoffat.github.io/bot-jekyll-theme
+author: Kite9 Ltd
+city: London
+country: UK
+phone: "+447900_247_282"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings
+github_url: https://github.com/robmoffat
+linkedin_url: https://www.linkedin.com/in/robmoffat/
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
