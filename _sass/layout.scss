@@ -4,9 +4,8 @@ html {
 }
 
 main {
-  background: #000029;
+  background: $body-background-color;
   margin: 6em 0 4em 0;
-  color: #FAFAFA;
   font-size: 1em;
   font-weight: 300;
   line-height: 1.5;
@@ -24,7 +23,7 @@ nav {
   display: block;
   width: 100%;
   z-index: 9999;
-  background: #14143d;
+  background: $sidebar-color;
   font-size: 1.25em;
   padding: 1em 0 1em 0;
   margin-bottom: 60px;
@@ -33,7 +32,7 @@ nav {
 
 nav .left {
   font-weight: 700;
-  color: white;
+  color: $body-heading-color;
   float: left;
   margin-left: 2em;
   text-decoration: none;
@@ -41,7 +40,7 @@ nav .left {
 
 nav .right {
   font-weight: 300;
-  color: #999;
+  color: $nav-child-link-color;
   float: right;
   margin-right: 2em;
 }
@@ -53,11 +52,11 @@ nav .right a {
 
 nav .left a {
   text-decoration: none;
-  color: white;
+  color: $body-heading-color;
 }
 
 nav a.current {
-  color: white;
+  color: $body-heading-color;
 }
 
 img.big {
@@ -72,7 +71,7 @@ img.contact {
 footer {
   text-align: center;
   font-size: .5em;
-  color: #333;
+  color: $feedback-color;
 }
 
 @media only screen and (max-width:550px) {
