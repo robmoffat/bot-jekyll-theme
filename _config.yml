@@ -1,0 +1,34 @@
+# site settings
+title: Symphony Consultancy
+subtitle: by Kite9 Ltd
+email: rob@kite9.com
+description: Please get in touch if you would like consultancy, advice or software built for the Symphony Chat Platform.
+baseurl: "/" # the subpath of your site, e.g. /blog
+include: ['_pages']
+url: https://symphony-consultancy.com
+author: Kite9 Ltd
+city: London
+country: UK
+phone: "+447900_247_282"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+webmaster_verifications:
+  google: De1XmCSflQlz4m7appNdw-XfiHGrRacbye1D5qM2CnA
+  bing: 9DFE22A35BB1805E3474C158DC853AB4
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings
+github_url: https://github.com/robmoffat
+linkedin_url: https://www.linkedin.com/in/robmoffat/
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed

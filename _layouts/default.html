@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>{{site.name}}</title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600"
+	rel="stylesheet" type="text/css">
+<link href="/assets/style.css" rel="stylesheet" type="text/css" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicon_io/site.webmanifest">
+
+</head>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav>
+	<div class="left"><a href="/">kite9 symphony consultancy</a></div>
+	<div class="right">
+	
+		{% for post in site.pages  %} 
+		 	{% if (post.nav-menu) %}
+			 	{% if (page.url == post.url) %}
+		        <a href="{{ site.baseurl }}{{ post.url }}" class="current">
+	            	{{ post.title }}   
+				</a>		 	
+			 	{% else %}
+		        <a href="{{ site.baseurl }}{{ post.url }}" >
+	            	{{ post.title }}   
+		        </a>
+	       		{% endif %}
+       		{% endif %}
+		{% endfor %}
+	</div>
+</nav>
+
+<main>
+{{ content }}
+</main>
+
+<footer>Copyright © {{ site.time | date: "%Y" }} Rob Moffat / Kite9 Ltd</footer>
+
+</body>
+</html>
