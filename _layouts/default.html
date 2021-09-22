@@ -10,13 +10,20 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon_io/favicon-32x32.png' | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon_io/favicon-16x16.png' | relative_url }}">
   <link rel="manifest" href="{{ '/assets/favicon_io/site.webmanifest' | relative_url }}">
+  <script type="text/javascript" src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>  
 </head>
 
 
 <!-- Begin Menu Navigation
 ================================================== -->
 <nav>
-	<div class="left"><a href="/">{{site.name}}</a></div>
+	<div class="left"><a href="{{ '/' | relative_url }}">{{site.name}}</a>
+	  <a href="#" id="search-button" class="search-button">
+	    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-search"></use></svg>
+	  </a>
+	  <div class="search-overlay"></div>
+	</div>
 	<div class="right">
 	
 		{% for post in site.pages  %} 
