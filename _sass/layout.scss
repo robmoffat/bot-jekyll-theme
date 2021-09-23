@@ -20,7 +20,8 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   z-index: 9999;
   background: $sidebar-color;
@@ -33,7 +34,6 @@ nav {
 nav .left {
   font-weight: 700;
   color: $body-heading-color;
-  float: left;
   margin-left: 2em;
   text-decoration: none;
 }
@@ -41,7 +41,6 @@ nav .left {
 nav .right {
   font-weight: 300;
   color: $nav-child-link-color;
-  float: right;
   margin-right: 2em;
 }
 
