@@ -11,7 +11,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon_io/favicon-16x16.png' | relative_url }}">
   <link rel="manifest" href="{{ '/assets/favicon_io/site.webmanifest' | relative_url }}">
   <script type="text/javascript" src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
-  <script type="text/javascript" src="{{ '/assets/js/search.js' | relative_url }}"></script>  
 </head>
 <body>
 
@@ -37,12 +36,7 @@
 		       		{% endif %}
 	       		{% endif %}
 			{% endfor %}
-			
-      <div class="search">
-        <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search {{ site.title }}" aria-label="Search {{ site.title }}" autocomplete="off">
-        <div id="search-results" class="search-results"></div>
-      </div>
-			
+	
 		</div>
 	</nav>
 
@@ -50,8 +44,5 @@
 	
 	<footer>Copyright © {{ site.time | date: "%Y" }} {{ site.footer }} </footer>
  
-  <div class="search-overlay"></div>
-
-
 </body>
 </html>
