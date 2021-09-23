@@ -2,7 +2,7 @@
 // Search input and autocomplete
 //
 
-.search {
+/*.search {
   position: relative;
   z-index: 2;
   flex-grow: 1;
@@ -90,6 +90,12 @@
     align-self: center;
     color: $grey-dk-000;
   }
+} */
+
+.search-input {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: $search-result-preview-color;
 }
 
 .search-results {

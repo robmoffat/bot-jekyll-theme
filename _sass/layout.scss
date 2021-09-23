@@ -22,6 +22,7 @@ nav {
   right: 0;
   display: flex;
   justify-content: space-between;
+  align-content: center;
   width: 100%;
   z-index: 9999;
   background: $sidebar-color;
@@ -42,6 +43,8 @@ nav .right {
   font-weight: 300;
   color: $nav-child-link-color;
   margin-right: 2em;
+  display: flex;
+  align-content: center;
 }
 
 nav .right a {
