@@ -5,7 +5,7 @@ footer: "Designed by Rob Moffat"
 subtitle: Kite9 Ltd
 email: rob@kite9.com
 description: For various Symphony Websites
-baseurl: "/bot-jeykll-theme" # the subpath of your site, e.g. /blog
+baseurl: "/bot-jekyll-theme" # the subpath of your site, e.g. /blog
 include: ['_pages']
 url: https://robmoffat.github.io
 author: Kite9 Ltd
