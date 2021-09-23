@@ -276,7 +276,7 @@
     padding: 0;
   }
 
-  .search-input-wrap {
+  /*.search-input-wrap {
     height: $sp-10;
     border-radius: 0;
 
@@ -292,7 +292,7 @@
     @include mq(md) {
       padding-left: 2.3rem;
     }
-  }
+  } */
 
   .search-label {
     @include mq(md) {
