@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: general
 disqus: false
 archive: false
 post_class: post-template
@@ -8,16 +8,3 @@ post_class: post-template
 
 {{ content }}
 
-{% for post in site.pages  %} 
-	{% if ((page.url != post.url) && (post.title != blank) && (post.title != "")) %}
-   	      {% if (post.menu) %}
-        <article>
-   			<img src="{{ post.image }}" title="Image for {{ post.title }}" />
-   			<h2><a href="{{ site.baseurl }}{{ post.url }}">
-   		 		{{ post.title }}
-   		 	</a></h2>   
-   			<p> {{ post.description }} </p>	
-   		</article>
-        {% endif %}
-	{% endif %}
-{% endfor %}

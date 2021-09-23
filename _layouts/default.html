@@ -1,52 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>{{site.name}}</title>
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
-  <link href="{{ '/assets/css/bot-jekyll-theme-default.css' | relative_url }}" rel="stylesheet" type="text/css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon_io/apple-touch-icon.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon_io/favicon-32x32.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon_io/favicon-16x16.png' | relative_url }}">
-  <link rel="manifest" href="{{ '/assets/favicon_io/site.webmanifest' | relative_url }}">
-  <script type="text/javascript" src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
-  <script type="text/javascript" src="{{ '/assets/js/search.js' | relative_url }}"></script>  
-</head>
-
-
-<!-- Begin Menu Navigation
-================================================== -->
-<nav>
-	<div class="left"><a href="{{ '/' | relative_url }}">{{site.name}}</a>
-	  <a href="#" id="search-button" class="search-button">
-	    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-search"></use></svg>
-	  </a>
-	  <div class="search-overlay"></div>
-	</div>
-	<div class="right">
-	
-		{% for post in site.pages  %} 
-		 	{% if (post.nav-menu) %}
-			 	{% if (page.url == post.url) %}
-		        <a href="{{ site.baseurl }}{{ post.url }}" class="current">
-	            	{{ post.title }}   
-				</a>		 	
-			 	{% else %}
-		        <a href="{{ site.baseurl }}{{ post.url }}" >
-	            	{{ post.title }}   
-		        </a>
-	       		{% endif %}
-       		{% endif %}
-		{% endfor %}
-	</div>
-</nav>
+---
+layout: general
+disqus: false
+archive: false
+post_class: post-template
+---
 
 <main>
 {{ content }}
 </main>
 
-<footer>Copyright © {{ site.time | date: "%Y" }} {{ site.footer }} </footer>
-
-</body>
-</html>
