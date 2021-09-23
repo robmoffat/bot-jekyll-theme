@@ -55,7 +55,6 @@
 		  <a href="#" id="search-button" class="search-button">
 		    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-search"></use></svg>
 		  </a>
-		  <div class="search-overlay"></div>
 			<div class="search">
 		    <div class="search-input-wrap">
 		      <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search {{ site.title }}" aria-label="Search {{ site.title }}" autocomplete="off">
@@ -85,6 +84,9 @@
 	{{ content }}
 	
 	<footer>Copyright © {{ site.time | date: "%Y" }} {{ site.footer }} </footer>
+ 
+  <div class="search-overlay"></div>
+
 
 </body>
 </html>
